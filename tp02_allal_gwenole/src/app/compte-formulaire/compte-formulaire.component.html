@@ -1,0 +1,51 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="compteForm">
+  <div>
+    <label>Civilité:</label>
+    <select formControlName="civilite">
+      <option value="M.">M.</option>
+      <option value="Mme">Mme</option>
+      <option value="Mlle">Mlle</option>
+    </select>
+  </div>
+  <div>
+    <label>Nom:</label>
+    <input type="text" formControlName="nom">
+  </div>
+  <div>
+    <label>Prénom:</label>
+    <input type="text" formControlName="prenom">
+  </div>
+  <div>
+    <label>Adresse:</label>
+    <input type="text" formControlName="adresse">
+  </div>
+  <div>
+    <label>Code Postal:</label>
+    <input type="text" formControlName="cp">
+  </div>
+  <div>
+    <label>Ville:</label>
+    <input type="text" formControlName="ville">
+  </div>
+  <div>
+    <label>Pays:</label>
+    <input type="text" formControlName="pays">
+  </div>
+  <div>
+    <label>Téléphone:</label>
+    <input type="text" formControlName="tel">
+  </div>
+  <div>
+    <label>Email:</label>
+    <input type="email" formControlName="email">
+  </div>
+  <div>
+    <label>Login:</label>
+    <input type="text" formControlName="login">
+  </div>
+  <div>
+    <label>Mot de passe:</label>
+    <input type="password" formControlName="password">
+  </div>
+  <button type="submit">Valider</button>
+</form>
